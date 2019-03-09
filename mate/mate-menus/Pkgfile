@@ -1,4 +1,4 @@
-# Depends on: intltool glib gobject-introspection python2
+# Depends on: intltool glib gobject-introspection python
 
 description="Menu MATE"
 url="https://mate-desktop.org/"
