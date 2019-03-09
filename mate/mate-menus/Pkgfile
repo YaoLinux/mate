@@ -23,7 +23,6 @@ build() {
   make DESTDIR=$PKG install
 
   rm $PKG/usr/lib/libmate-menu.la
-  rm $PKG/usr/lib/python2.7/site-packages/matemenu.la  
 }
 
 uptodate() {
