@@ -1,4 +1,4 @@
-#Depends on: tilda brisk-menu gtk3 libnotify mate-applets python-configobj python-gobject python-psutil python-setproctitle python-distutils-extra mate-menus mate-netbook
+#Depends on: tilda gtk3 libnotify mate-applets python-configobj python-gobject python-psutil python-setproctitle python-distutils-extra mate-menus mate-netbook
 
 description="Tweak tool for MATE (fork of MintDesktop)"
 url="https://github.com/ubuntu-mate/mate-tweak"
@@ -8,6 +8,7 @@ contributors=""
 name=mate-tweak
 version=18.10.2
 _umsver=18.04.17
+release=2
 
 run=(python-psutil python-setproctitle)
 
