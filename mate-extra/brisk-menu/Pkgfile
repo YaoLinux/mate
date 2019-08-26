@@ -1,0 +1,40 @@
+# Depends on: mate-desktop mate-menus mate-panel meson ninja
+
+description="Brisk menu an efficient menu for the MATE"
+url="https://github.com/solus-project/brisk-menu"
+packager="tnut <tnut@nutyx.org>"
+contributors="jayce, Greg"
+
+name=brisk-menu
+version=0.6.0
+
+source=(https://github.com/getsolus/$name/archive/v$version.tar.gz)
+
+PKGMK_KEEP_SOURCE="no"
+
+build() {
+	cd $name-$version
+	mkdir build
+
+	meson build \
+              --prefix=/usr \
+              --bindir=/usr/bin \
+              --libexecdir=/usr/lib/$name
+	ninja -C build
+	DESTDIR=$PKG ninja -C build install
+}
+
+
+uptodate() {
+	
+feed=https://github.com/solus-project/$name/releases.atom 
+exec="lynx -read_timeout=20 -dump -listonly -nonumbers $feed"
+ligne=1 # nombre de notification ? afficher
+$exec $feed | grep title | \
+sed "s@<title>@@" | \
+sed "s@</title>@@" | \
+sed "s@Brisk Menu @@" | sed "s@ @@g" | \
+head -n $(($ligne+1 )) | \
+tail -n $(($ligne))
+ 
+}
