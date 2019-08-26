@@ -8,7 +8,7 @@ contributors="Fanch, Tnut, Jayce, Greg"
 run=(shared-mime-info murrine)
 
 name=mate-control-center
-version=1.22.0
+version=1.22.1
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
@@ -24,9 +24,13 @@ capplets/about-me/mate-about-me-password.c
 --localstatedir=/var \
 --disable-static \
 --disable-update-mimedb
+
 make
+
 sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
 make DESTDIR=$PKG install
+
 rm -f  $PKG/usr/share/applications/mimeinfo.cache
 rm $PKG/usr/lib/libmate-window-settings.la
 rm $PKG/usr/lib/libmate-slab.la
