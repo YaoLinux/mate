@@ -2,18 +2,20 @@
 
 description="Tweak tool for MATE (fork of MintDesktop)"
 url="https://github.com/ubuntu-mate/mate-tweak"
-packager="Dania <Dania@nutyx.org>"
-contributors=""
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=mate-tweak
-version=18.10.2
-_umsver=18.04.17
-release=2
+version=19.10.1
+_umsver=19.10.2
 
 run=(python-psutil python-setproctitle)
 
+PKGMK_KEEP_SOURCES=no
+
 source=(https://github.com/ubuntu-mate/$name/archive/$version.tar.gz
         https://github.com/ubuntu-mate/ubuntu-mate-settings/archive/$_umsver.tar.gz)
+
 build() {
   cd $name-$version
   
