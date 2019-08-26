@@ -2,12 +2,11 @@
 
 description="Enable screensavers from xscreensaver for MATE"
 url="http://www.jwz.org/xscreensaver/"
-packager="greg <greg@nutyx.org>"
-contributors="fanch"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=mate-screensaver-hacks
-version=5.26
-release=1
+version=5.43
 
 source=(migrate-xscreensaver-config.sh
         xscreensaver-config.xsl LICENSE)
