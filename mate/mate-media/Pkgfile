@@ -1,12 +1,12 @@
-# Depends on: gobject-introspection gtk3 libcanberra libunique1 libxml2 mate-desktop mate-libmixer marco
+# Depends on: gobject-introspection gtk3 libcanberra libunique1 libxml2 mate-desktop mate-libmixer mate-panel
 
 description="MATE Media Tools (GStreamer)"
 url="https://mate-desktop.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="fanch,tnut,jayce,greg"
+packager="Yaolinux Team"
+contributors="rems"
 
 name=mate-media
-version=1.22.0
+version=1.22.1
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
@@ -19,8 +19,9 @@ build() {
           --libexecdir=/usr/lib/${name} \
           --localstatedir=/var \
           --disable-static
-      make
+
   make
+
   make DESTDIR=$PKG install
   
 }
