@@ -7,23 +7,25 @@ contributors="greg,fanch,tnut,jayce"
 
 name=mate-polkit
 version=1.22.0
+release=2
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
 build() {
 
   cd $name-$version
-  ./configure \
-          --prefix=/usr \
-          --libexecdir=/usr/lib/${name} \
-          --sysconfdir=/etc \
-          --localstatedir=/var \
-          --enable-introspection \
-          --disable-static
+  ./configure --prefix=/usr \
+              --libexecdir=/usr/lib/${name} \
+              --sysconfdir=/etc \
+              --localstatedir=/var \
+              --enable-introspection \
+              --disable-static
+
   make
+
   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
   make DESTDIR=$PKG install
-  
 }
 
 uptodate() {
