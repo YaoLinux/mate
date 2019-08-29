@@ -8,23 +8,29 @@ contributors="fanch,tnut,jayce,greg"
 name=mate-libweather
 _name=libmateweather
 version=1.22.0
+release=2
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
 
 build() {
 
 	cd ${_name}-$version
-		./configure \
-	        --prefix=/usr \
-	        --sysconfdir=/etc \
-	        --localstatedir=/var \
-	        --with-gtk=3.0 \
-	        --disable-static \
-	        --disable-python \
-	        --enable-locations-compression
-	make
-	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
-	make DESTDIR=$PKG install
+	
+   ./configure --prefix=/usr \
+	       --sysconfdir=/etc \
+	       --localstatedir=/var \
+	       --with-gtk=3.0 \
+	       --disable-static \
+	       --disable-python \
+	       --enable-locations-compression
+
+   make
+
+   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+   make DESTDIR=$PKG install
+
+# Obsolet libs
 
 	rm $PKG/usr/lib/libmateweather.la
 }
