@@ -8,7 +8,7 @@ maintainer="rems"
 name=mate-libkbd
 _name=libmatekbd
 version=1.22.0
-release=4
+release=5
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
 
@@ -16,7 +16,10 @@ build() {
 
 cd ${_name}-$version
 
-./configure  --prefix=/usr
+./configure  --prefix=/usr \
+             --disable-silent-rules \
+             --enable-introspection \
+             --disable-static
 
 make
 
