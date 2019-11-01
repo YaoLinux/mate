@@ -1,4 +1,4 @@
-makedepends=(gtk3 mate-panel libgtop)
+makedepends=(gtk3 mate-panel libgtop udisks2)
 
 description="Common MATE utilities for viewing disk usage"
 url="https://mate-desktop.org/"
