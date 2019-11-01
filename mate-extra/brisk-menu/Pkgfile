@@ -2,6 +2,7 @@ makedepends=(mate-desktop mate-menus mate-panel meson ninja)
 
 description="Brisk menu an efficient menu for the MATE"
 url="https://github.com/solus-project/brisk-menu"
+
 packager="Yaolinux Team"
 maintainer="rems"
 
@@ -13,15 +14,15 @@ source=(https://github.com/getsolus/$name/archive/v$version.tar.gz)
 PKGMK_KEEP_SOURCE="no"
 
 build() {
-	cd $name-$version
-	mkdir build
+	mkdir build && cd build
 
-	meson build \
-              --prefix=/usr \
-              --bindir=/usr/bin \
-              --libexecdir=/usr/lib/$name
-	ninja -C build
-	DESTDIR=$PKG ninja -C build install
+	meson --prefix=/usr \
+          --bindir=/usr/bin \
+          --libexecdir=/usr/lib/$name
+          ../$name-$version
+
+	ninja
+	DESTDIR=$PKG ninja install
 }
 
 
