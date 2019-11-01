@@ -1,9 +1,9 @@
-# Depends on: caja gupnp
+makedepends=(caja gupnp)
 
 description="Caja extensions (common files)"
 url="https://mate-desktop.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="fanch,tnut,jayce,greg"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=caja-extensions
 version=1.22.0

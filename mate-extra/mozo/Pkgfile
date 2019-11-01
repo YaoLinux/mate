@@ -1,4 +1,4 @@
-# Depends on: mate-menus python-gobject python2-gobject gtk-update-icon-cache
+makedepends=(mate-menus python-gobject python2-gobject gtk-update-icon-cache)
 
 description="MATE menu editing tool"
 url="https://mate-desktop.org/"

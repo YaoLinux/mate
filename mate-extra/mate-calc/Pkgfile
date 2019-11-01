@@ -1,4 +1,4 @@
-# Depends on: gtk3
+makedepends=(gtk3)
 
 description="Mate calculator"
 url="https://mate-desktop.org/"

@@ -1,7 +1,8 @@
-# Depends on: gtk2
+makedepends=(gtk2)
 
 description="Default themes for MATE desktop"
 url="https://mate-desktop.org/"
+
 packager="Yaolinux Team"
 maintainer="rems"
 

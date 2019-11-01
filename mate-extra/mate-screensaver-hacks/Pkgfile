@@ -1,4 +1,4 @@
-# Depends on: xscreensaver
+makedepends=(xscreensaver)
 
 description="Enable screensavers from xscreensaver for MATE"
 url="http://www.jwz.org/xscreensaver/"

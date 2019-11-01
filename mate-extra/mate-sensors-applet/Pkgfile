@@ -1,4 +1,4 @@
-# Depends on: gtk3 libatasmart libnotify lm-sensors mate-panel
+makedepends=(gtk3 libatasmart libnotify lm-sensors mate-panel)
 
 description="A MATE Panel applet to display readings from hardware sensors."
 url="https://mate-desktop.org/"

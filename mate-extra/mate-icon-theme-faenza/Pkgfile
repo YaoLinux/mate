@@ -1,9 +1,9 @@
-# Depends on: mate-common gtk-update-icon-cache
+makedepends=(mate-common gtk-update-icon-cache)
 
 description="Faenza icon theme for MATE"
 url="https://mate-desktop.org/"
-packager="greg <greg@nutyx.org>"
-contributors="fanch,tnut,jayce"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=mate-icon-theme-faenza
 version=1.20.0

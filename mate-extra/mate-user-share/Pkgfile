@@ -1,4 +1,4 @@
-# Depends on: apache bluez caja dconf gdk-pixbuf gtk3 libnotify libcanberra libunique1 mod-dnssd
+makedepends=(apache bluez caja dconf gdk-pixbuf gtk3 libnotify libcanberra libunique1 mod-dnssd)
 
 description="User level public file sharing via WebDAV for MATE"
 url="https://mate-desktop.org/"

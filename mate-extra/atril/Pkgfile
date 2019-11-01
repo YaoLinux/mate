@@ -1,4 +1,4 @@
-# Depends on: caja dconf djvulibre gtk2 libsecret libspectre mate-desktop mate-icon-theme poppler-glib poppler webkitgtk
+makedepends=(caja dconf djvulibre gtk2 libsecret libspectre mate-desktop mate-icon-theme poppler-glib poppler webkitgtk)
 
 description="Simply a pdf document viewer"
 url="https://mate-desktop.org/"

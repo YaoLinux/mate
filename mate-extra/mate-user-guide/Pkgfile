@@ -1,4 +1,4 @@
-# Depends on: itstool intltool
+makedepends=(itstool intltool)
 
 description="Mate user guide"
 url="https://mate-desktop.org/"

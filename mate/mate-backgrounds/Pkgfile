@@ -1,9 +1,10 @@
-# Depends on: perl-xml-parser intltool
+makedepends=(intltool)
 
 description="Background images and data for MATE"
 url="https://mate-desktop.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch,Tnut,Jayce,Greg"
+
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=mate-backgrounds
 version=1.22.0

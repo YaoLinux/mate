@@ -1,9 +1,9 @@
-# Depends on: caja python-gobject
+makedepends=(caja python-gobject)
 
 description="Python for Caja"
 url="https://mate-desktop.org/"
-packager="tnut <tnut@nutyx.org>"
-contributors="Fanch, Tnut, Jayce, Greg, Remy"
+packager="Yaolinux Team"
+maintainer="rems"
 
 name=python-caja
 version=1.22.0

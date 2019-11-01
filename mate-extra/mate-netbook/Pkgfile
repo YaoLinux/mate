@@ -1,4 +1,4 @@
-# Depends on: gtk3 libwnck libfakekey libunique1 mate-panel
+makedepends=(gtk3 libwnck libfakekey libunique1 mate-panel)
 
 description="A simple window management tool"
 url="https://mate-desktop.org/"

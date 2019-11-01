@@ -1,4 +1,4 @@
-# Depends on: caja json-glib
+makedepends=(caja json-glib)
 
 description="Archive manipulator for MATE"
 url="https://mate-desktop.org/"
