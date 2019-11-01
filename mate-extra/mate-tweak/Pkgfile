@@ -1,9 +1,10 @@
-#Depends on: tilda gtk3 libnotify mate-applets python-configobj python-gobject python-psutil python-setproctitle python-distutils-extra mate-menus mate-netbook
+makedepends=(tilda gtk3 libnotify mate-applets python-configobj python-gobject python-psutil python-setproctitle python-distutils-extra mate-menus mate-netbook)
 
 description="Tweak tool for MATE (fork of MintDesktop)"
 url="https://github.com/ubuntu-mate/mate-tweak"
+
 packager="Yaolinux Team"
-maintainer="rems"
+maintainer="Dania"
 
 name=mate-tweak
 version=19.10.1
@@ -24,5 +25,5 @@ build() {
   python3 setup.py build
   python3 setup.py install --root=$PKG --optimize=1 --skip-build
 
-  cp -r $SRC/ubuntu-mate-settings-$_umsver/usr/share/mate-panel $PKG/usr/share
+  cp -r ../ubuntu-mate-settings-$_umsver/usr/share/mate-panel $PKG/usr/share
 }
