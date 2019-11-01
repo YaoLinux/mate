@@ -2,6 +2,7 @@ makedepends=(gtk3 libatasmart libnotify lm-sensors mate-panel)
 
 description="A MATE Panel applet to display readings from hardware sensors."
 url="https://mate-desktop.org/"
+
 packager="Yaolinux Team"
 maintainer="rems"
 
@@ -18,12 +19,7 @@ build() {
               --libexecdir=/usr/lib/${name}
 
   make
-
   make DESTDIR=$PKG install
-
-  # Obsolets libs
-  rm $PKG/usr/lib/libmate-sensors-applet-plugin.la
-  rm $PKG/usr/lib/mate-sensors-applet/plugins/*.la 
 }
 
 uptodate() {
