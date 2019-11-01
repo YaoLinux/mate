@@ -2,6 +2,7 @@ makedepends=(gtk3 libwnck libfakekey libunique1 mate-panel)
 
 description="A simple window management tool"
 url="https://mate-desktop.org/"
+
 packager="Yaolinux Team"
 maintainer="rems"
 
@@ -19,7 +20,6 @@ build() {
               --sysconfdir=/etc
 
   make
-
   make DESTDIR=$PKG install
 }
 
