@@ -1,16 +1,17 @@
-makedepends=(tilda gtk3 libnotify mate-applets python-configobj python-gobject python-psutil python-setproctitle python-distutils-extra mate-menus mate-netbook)
+makedepends=(tilda gtk3 libnotify mate-applets python-configobj python-gobject python-psutil python-setproctitle python-distutils-extra mate-menus mate-netbook python-distro)
 
 description="Tweak tool for MATE (fork of MintDesktop)"
 url="https://github.com/ubuntu-mate/mate-tweak"
 
 packager="Yaolinux Team"
-maintainer="Dania"
+maintainer="rems"
 
 name=mate-tweak
 version=19.10.1
 _umsver=19.10.2
+release=2
 
-run=(python-psutil python-setproctitle)
+run=(python-psutil python-setproctitle python-distro)
 
 PKGMK_KEEP_SOURCES=no
 
