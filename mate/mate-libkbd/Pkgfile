@@ -8,7 +8,7 @@ maintainer="rems"
 
 name=mate-libkbd
 _name=libmatekbd
-version=1.22.0
+version=1.24.0
 release=5
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
