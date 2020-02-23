@@ -9,7 +9,7 @@ maintainer="rems"
 run=(shared-mime-info desktop-file-utils)
 
 name=caja
-version=1.22.2
+version=1.24.0
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
