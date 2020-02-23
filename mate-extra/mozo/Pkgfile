@@ -9,7 +9,7 @@ maintainer="rems"
 run=(python-gobject python2-gobject gtk-update-icon-cache)
 
 name=mozo
-version=1.22.2
+version=1.24.0
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
