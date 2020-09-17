@@ -8,8 +8,7 @@ maintainer="rems"
 
 name=mate-libmixer
 _name=libmatemixer
-version=1.24.0
-release=2
+version=1.24.1
 
 source=(http://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
 
