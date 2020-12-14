@@ -7,7 +7,7 @@ packager="Yaolinux Team"
 maintainer="rems"
 
 name=mate-tweak
-version=20.04.0
+version=20.10.0
 _umsver=19.10.2
 release=2
 
